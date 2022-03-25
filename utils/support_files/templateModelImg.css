@@ -1,0 +1,168 @@
+.splitter {
+	width: 100%;
+	height: 800px;
+	display: flex;
+}
+body {
+    font-family: "Consolas", Gadget, sans-serif;
+    font-size: medium;
+}
+a.anchor{
+    padding: 5px;
+    display: flex;
+    color:black;
+    background-color:  white;
+    text-decoration: none;
+    font-family: "Consolas", Gadget, sans-serif;
+    font-style:inherit;
+    margin-left: 10px;
+}
+.signalsContainer{
+display: -webkit-flex;
+
+}
+.signalsContainer div{
+    padding: 20px;
+}
+.outputSignal {
+    display: block;
+    text-align: center;
+    font-size: large;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+.signalImageClass img{
+width: 80%;
+}
+#seperator {
+	cursor: col-resize;
+	background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #535353;	
+	width: 10px;
+	height: 800px;
+	min-width: 10px;
+	    background-repeat: no-repeat;
+    background-position: center;
+	    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+  margin-left: 0.9em;
+}
+/*list with spacing*/
+.myspan {
+  margin-top: 5px;
+  padding: 0.125em;
+  border: 2px transparent solid #228999;
+  display: block;
+  cursor: pointer;
+}
+
+/*Hover Callback*/
+b:hover {
+    color: white;
+    background-color: #228999;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+}
+
+/*Focus callback*/
+b:focus {
+    border-color: black;
+    display: inline-block;
+    background-color: #eee;
+}
+
+/* Block Margin*/
+.center
+{margin: auto;width: 60;border: 2px solid #228999;}
+/* Pointer */
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\2B9E";
+  color: brown;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+#myBtn {
+    display: none;
+    position:fixed;
+    bottom: 11%;
+    right: 1.5%;
+    z-index: 99;
+    font-size: 18px;
+    border-style: groove;
+    outline: none;
+    background-color: white;
+    color:#228999;
+    cursor: pointer;
+}
+  
+#myBtn:hover {
+    color: white;
+    background-color: #228999;
+}
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+/* Create two columns/boxes that floats next to each other */
+#mynav {
+  float: left;
+  width: 30%;
+  height: 800px;
+  background: white;
+  min-width: 10px;
+}
+/*content display block*/
+#mydiv {
+    float: left;            
+    min-width: 10px;
+    width: 70%;
+    background-color: white;
+    height: 800px; 
+    text-align: center;
+    overflow: scroll;
+}
+#mydiv object
+{
+ width: 100%;
+ height: 100%
+}
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+/*Scroll bar enabled*/
+nav {
+  overflow: scroll;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: 100%;
+  }
